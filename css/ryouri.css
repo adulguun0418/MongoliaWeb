@@ -1,0 +1,90 @@
+* {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
+    url(../images/mongolian_cuisine.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll;
+}
+
+header {
+  height: 30px;
+  padding: 10px;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); */
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+  padding: 2px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 2px 20px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  transition: 0.4s ease;
+}
+
+ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.active a {
+  background-color: white;
+  color: black;
+}
+
+.logo a img {
+  float: left;
+  width: 60px;
+  height: auto;
+  margin-top: 0px;
+  margin-left: 30px;
+}
+
+h1 {
+  font-size: 100px;
+  color: #fff;
+  text-align: center;
+}
+
+p {
+  color: #fff;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.ryouriImages {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 10%;
+}
+
+.ryouriImages img {
+  width: 30%;
+  transition: 0.4s;
+}
+
+.ryouriImages img:hover {
+  transform: scale(1.1);
+  filter: greyscale(0.4);
+}

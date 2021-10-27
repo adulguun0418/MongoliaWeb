@@ -1,0 +1,90 @@
+* {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
+    url(../images/home_image.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll;
+}
+
+header {
+  height: 30px;
+  padding: 10px;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); */
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+  padding: 2px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 2px 20px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  transition: 0.4s ease;
+}
+
+ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.active a {
+  background-color: white;
+  color: black;
+}
+
+.logo a img {
+  float: left;
+  width: 60px;
+  height: auto;
+  margin-top: 0px;
+  margin-left: 30px;
+}
+
+.mongoliaborder {
+  position: absolute;
+  display: block;
+  left: 50%;
+}
+
+.borderimg img {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 50%;
+}
+.infoTable,
+td {
+  border: 2px solid #ffffff;
+  border-collapse: collapse;
+  color: white;
+  padding: 5px;
+}
+
+.infoTable {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}

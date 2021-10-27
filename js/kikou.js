@@ -1,0 +1,75 @@
+var myChart = document.getElementById("myChart").getContext("2d");
+
+Chart.defaults.global.defaultFontColor = "white";
+
+var kikouChart = new Chart(myChart, {
+  type: "bar",
+  data: {
+    labels: [
+      "1月",
+      "",
+      "2月",
+      "",
+      "3月",
+      "",
+      "4月",
+      "",
+      "5月",
+      "",
+      "6月",
+      "",
+      "7月",
+      "",
+      "8月",
+      "",
+      "9月",
+      "",
+      "10月",
+      "",
+      "11月",
+      "",
+      "12月",
+      "",
+    ],
+
+    datasets: [
+      {
+        label: "Monthly high and low",
+        data: [
+          -33,
+          -16,
+          -30,
+          -11,
+          -17,
+          0.1,
+          -6,
+          11,
+          0.1,
+          17,
+          8,
+          23,
+          11,
+          26,
+          8,
+          23,
+          0.1,
+          17,
+          -7,
+          8,
+          -21,
+          -5,
+          -29,
+          -14,
+        ],
+        backgroundColor: "white",
+      },
+    ],
+  },
+  options: {
+    title: {
+      display: true,
+      text: "ウラーンバートルの平均温度",
+      fontSize: 50,
+    },
+  },
+});

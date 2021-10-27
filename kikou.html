@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//en">
+<html>
+  <head>
+    <meta http-equiv="”Content-Language”" content="”ja”" />
+    <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8”>
+    <title>気候</title>
+    <link
+      rel="icon"
+      href="images/flag_of_mongolia.png"
+      type="image/icon type"
+    />
+    <link rel="stylesheet" href="css/kikou.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header id="navbar">
+      <div class="logo">
+        <a href="j2061.html"
+          ><img src="images/flag_of_mongolia.png" alt="flag_of_mongolia"
+        /></a>
+      </div>
+      <ul>
+        <li><a href="j2061.html">HOME</a></li>
+        <li><a href="rekishi.html">歴史</a></li>
+        <li><a href="gallery.html">ギャラリー</a></li>
+        <li><a href="ryouri.html">料理</a></li>
+        <li class="active"><a href="kikou.html">気候</a></li>
+        <li><a href="kankouchi.html">観光地</a></li>
+      </ul>
+    </header>
+    <div style="height: 100px;"></div>
+
+    <div class="container">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div style="height: 50px;"></div>
+    <p style="text-align: center; color: #fff;">
+      Source:
+      <a
+        href="https://www.climatestotravel.com/climate/mongolia"
+        target="_blank"
+        >https://www.climatestotravel.com/climate/mongolia</a
+      >
+    </p>
+
+    <script src="js/kikou.js"></script>
+    <script type="text/javascript">
+      var navbar = document.getElementById("navbar");
+      window.onscroll = function () {
+        if (window.pageYOffset > 10) {
+          navbar.style.backgroundImage =
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))";
+        } else {
+          navbar.style.background = "transparent";
+        }
+      };
+    </script>
+  </body>
+</html>
